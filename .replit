@@ -1,5 +1,6 @@
 language = "python3"
 run = "python app.py"
+modules = ["python-3.11"]
 [nix]
 channel = "stable-24_05"
 
@@ -7,5 +8,11 @@ channel = "stable-24_05"
 run = ["sh", "-c", "python app.py"]
 
 [[ports]]
-localPort = 8080
+localPort = 5000
 externalPort = 80
+
+[[ports]]
+localPort = 5050
+externalPort = 3001
+
+
